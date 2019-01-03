@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Home = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Kolabatory</h1>
     </div>
   );
 };
