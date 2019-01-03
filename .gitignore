@@ -2,3 +2,7 @@ node_modules
 
 # VSCode
 .vscode
+
+# Next
+out
+.next
