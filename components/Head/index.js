@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 
+import config from '../../config';
+
 const HeadComponent = () => {
   return (
     <Head>
@@ -16,6 +18,19 @@ const HeadComponent = () => {
       />
 
       <link rel="icon" type="image/x-icon" href="../../static/favicon.ico" />
+
+      {/* Global site tag (gtag.js) - Google Analytics */}
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${config.GATrackingID}`} />
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', ${config.GATrackingID});`,
+        }}
+      />
     </Head>
   );
 };

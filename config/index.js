@@ -1,3 +1,6 @@
-import app from './app';
+const config = {
+  primaryEmailAddress: 'kolabatory@gmail.com',
+  GATrackingID: 'UA-131721332-1',
+};
 
-export { app };
+export default config;

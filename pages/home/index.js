@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { app } from '../../config';
+import config from '../../config';
 import styles from './styles.scss';
 
 import Page from '../../components/Page';
@@ -18,7 +18,7 @@ const Home = () => {
 
         <h4 className={styles.whiteText}>Get in touch:</h4>
 
-        <a href={`mailto:${app.primaryEmailAddress}`}>{app.primaryEmailAddress}</a>
+        <a href={`mailto:${config.primaryEmailAddress}`}>{config.primaryEmailAddress}</a>
       </div>
     </Page>
   );
