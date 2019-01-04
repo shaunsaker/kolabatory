@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Page>
       <div className={styles.container}>
-        <img src="/static/images/logo-primary.svg" alt="Test" className={styles.logo} />
+        <img src="/static/images/logo-primary.svg" alt="Kolabatory logo" className={styles.logo} />
 
         <h3 className={styles.whiteText}>Mobile, Web and Native App Development</h3>
 
