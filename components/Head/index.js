@@ -7,6 +7,8 @@ const HeadComponent = () => {
     <Head>
       <title>Kolabatory | Technology</title>
 
+      <meta name="Description" content="Mobile, Web and Native App Development" key="description" />
+
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1.0"
