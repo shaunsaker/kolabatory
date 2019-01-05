@@ -45,7 +45,7 @@ export default class Product extends React.Component {
         alt: `${name} ${index + 1}`,
       };
     });
-    const orderFormModalComponent = !showOrderFormModal && (
+    const orderFormModalComponent = showOrderFormModal && (
       <OrderFormModal productID={productID} handleClose={this.toggleShowOrderFormModal} />
     );
 
