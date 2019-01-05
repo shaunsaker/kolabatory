@@ -21,13 +21,7 @@ const OrderFormModal = ({ productID, handleClose }) => {
 
         <LineSeparator />
 
-        <form
-          name="order"
-          method="POST"
-          data-netlify="true"
-          action={`/shop/?productID=${productID}`}
-          className={styles.form}
-        >
+        <form name="order" method="POST" data-netlify="true" className={styles.form}>
           <div className={styles.inputContainer}>
             <label htmlFor="name">Your Name</label>
 
