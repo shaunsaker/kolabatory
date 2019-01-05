@@ -7,8 +7,8 @@ import styles from './styles.scss';
 
 import Page from '../../components/Page';
 import Header from '../../components/Header';
-import Product from './Product';
-import Products from './Products';
+import Product from '../../components/Shop/Product';
+import Products from '../../components/Shop/Products';
 
 const Shop = ({ router }) => {
   const { query } = router;
