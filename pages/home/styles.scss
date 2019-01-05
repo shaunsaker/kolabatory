@@ -1,27 +1,4 @@
-@import '../../static/styles/variables.scss';
-//
-.container {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background-color: $primary;
-  padding: 16px 24px;
-  text-align: center;
-}
-
-.logo {
-  width: 100%;
-  max-width: 320px;
-  margin-bottom: 48px;
-}
-
-.whiteText {
-  color: $secondary;
-}
-
-.line {
-  width: 160px;
-  height: 1px;
-  background-color: $accent;
-  margin: 16px 0;
+.link {
+  text-decoration: underline;
+  cursor: pointer;
 }

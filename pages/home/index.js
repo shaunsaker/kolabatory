@@ -1,25 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 
-import config from '../../config';
+import { app } from '../../config';
 import styles from './styles.scss';
 
 import Page from '../../components/Page';
+import Logo from '../../components/Logo';
+import LineSeparator from '../../components/LineSeparator';
+import Button from '../../components/Button';
 
 const Home = () => {
   return (
     <Page>
-      <div className={styles.container}>
-        <img src="/static/images/logo-primary.svg" alt="Kolabatory logo" className={styles.logo} />
+      <Logo />
 
-        <h3 className={styles.whiteText}>Mobile, Web and Native App Development</h3>
+      <h3>
+        Mobile, Web and Native App Development •{' '}
+        <Link href="/shop">
+          <span className={styles.link}>Shop</span>
+        </Link>
+      </h3>
 
-        <div className={styles.line} />
+      <LineSeparator />
 
-        <h4 className={styles.whiteText}>Get in touch:</h4>
-
-        <a href={`mailto:${config.primaryEmailAddress}`}>{config.primaryEmailAddress}</a>
-      </div>
+      <Button text="Get in touch" href={`mailto:${app.primaryEmailAddress}`} />
     </Page>
   );
 };

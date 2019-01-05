@@ -1,6 +1,11 @@
+import app from './app';
+import products from './products';
+
 const config = {
-  primaryEmailAddress: 'kolabatory@gmail.com',
-  GATrackingID: 'UA-131721332-1',
+  app,
+  products,
 };
+
+export { app, products };
 
 export default config;

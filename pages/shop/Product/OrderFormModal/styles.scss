@@ -1,0 +1,49 @@
+@import '../../../../static/styles/variables.scss';
+//
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: auto;
+}
+
+.modal {
+    flex: 1;
+    background-color: $secondary;
+    border-radius: 8px;
+    align-items: center;
+    padding: 16px 24px;
+    margin: 16px 24px;
+    max-width: 480px;
+    min-height: auto;
+    position: relative;
+}
+
+.closeIconContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+}
+
+.closeIcon {
+    font-size: 24px;
+}
+
+.blackText {
+    color: $primary;
+}
+
+.lineSeparatorContainer {
+    min-height: auto;
+}
+
+.form {
+    margin-top: 16px;
+}
+
+.inputContainer {
+    margin-bottom: 16px;
+}

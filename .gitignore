@@ -6,3 +6,6 @@ node_modules
 # Next
 out
 .next
+
+# Mac
+.DS_Store
