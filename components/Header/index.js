@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 
+import { app } from '../../config';
 import styles from './styles.scss';
 
 import Logo from '../Logo';
@@ -51,6 +53,16 @@ export default class Header extends React.Component {
     return (
       <div className={`${styles.container} ${hasShadow && styles.shadow}`}>
         <Logo small />
+
+        <div className={styles.linksContainer}>
+          <Link href="/shop">
+            <p className={styles.shopLinkText}>Shop</p>
+          </Link>
+
+          <a href={`mailto:${app.primaryEmailAddress}`} className={styles.contactLinkText}>
+            Contact
+          </a>
+        </div>
       </div>
     );
   }

@@ -5,7 +5,8 @@
     top: 0;
     left: 0;
     right: 0;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 0 24px;
     height: 72px;
@@ -18,4 +19,20 @@
     -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.67);
     -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.67);
     box-shadow: 0 3px 5px rgba(57, 63, 72, 0.67);
+}
+
+.linksContainer {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.shopLinkText {
+    margin-right: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contactLinkText {
+    text-decoration: none;
 }
