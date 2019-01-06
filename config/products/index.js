@@ -1,5 +1,6 @@
 const products = {
   'atheros-ar9271-usb-wifi-adapter': {
+    id: 'atheros-ar9271-usb-wifi-adapter',
     name: 'Atheros AR9271 USB WiFi Adapter',
     numberOfImages: 6, // this is used to generate the images on the fly using the productID
     price: 360,

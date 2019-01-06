@@ -56,10 +56,13 @@ export default class Header extends React.Component {
 
         <div className={styles.linksContainer}>
           <Link href="/shop">
-            <p className={styles.shopLinkText}>Shop</p>
+            <p className={`${styles.whiteText} ${styles.shopLinkText}`}>Shop</p>
           </Link>
 
-          <a href={`mailto:${app.primaryEmailAddress}`} className={styles.contactLinkText}>
+          <a
+            href={`mailto:${app.primaryEmailAddress}`}
+            className={`${styles.whiteText} ${styles.contactLinkText}`}
+          >
             Contact
           </a>
         </div>

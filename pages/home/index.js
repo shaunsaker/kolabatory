@@ -12,10 +12,10 @@ import Button from '../../components/Button';
 
 const Home = () => {
   return (
-    <Page>
+    <Page black>
       <Logo />
 
-      <h3>
+      <h3 className={styles.whiteText}>
         Mobile, Web and Native App Development •{' '}
         <Link href="/shop">
           <span className={styles.link}>Shop</span>

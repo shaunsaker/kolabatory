@@ -1,20 +1,25 @@
 @import 'variables.scss';
 //
 .container {
-  padding: 16px 24px;
-  background-color: $secondary;
-  color: $primary;
-  border-radius: 4px;
-  margin: 8px 0;
-  min-width: 240px;
-  text-decoration: none;
-  font-family: 'Roboto Condensed';
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
+    padding: 16px 24px;
+    background-color: $secondary;
+    color: $primary;
+    border-radius: 4px;
+    margin: 8px 0;
+    min-width: 240px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: box-shadow 0.5s ease;
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
 }
 
 .primary {
-  background-color: $accent;
+    background-color: $accent;
 }

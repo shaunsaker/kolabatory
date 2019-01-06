@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
-import Link from 'next/link';
 
 import styles from './styles.scss';
 
@@ -24,10 +23,6 @@ const Shop = ({ router }) => {
   return (
     <Page>
       <Header />
-
-      <Link href="/shop">
-        <h1 className={styles.link}>Shop</h1>
-      </Link>
 
       {productComponent}
     </Page>
