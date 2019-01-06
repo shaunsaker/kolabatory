@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { app, products } from '../../../config';
+import { products } from '../../../config';
 import styles from './styles.scss';
 
-import LineSeparator from '../../../components/LineSeparator';
-import Button from '../../../components/Button';
+import LineSeparator from '../../LineSeparator';
+import Spacer from '../../Spacer';
+import Button from '../../Button';
 import OrderFormModal from './OrderFormModal';
 
 export default class Product extends React.Component {
@@ -53,6 +54,14 @@ export default class Product extends React.Component {
 
       return (
         <div className={styles.container}>
+          <Spacer />
+
+          <h1>{name}</h1>
+
+          <div className={styles.lineSeparatorContainer}>
+            <LineSeparator />
+          </div>
+
           <ul className={styles.imagesContainer}>
             {images.map((image) => {
               return (
@@ -63,23 +72,23 @@ export default class Product extends React.Component {
             })}
           </ul>
 
-          <h2>{name}</h2>
+          <Spacer />
 
-          <div className={styles.lineSeparatorContainer}>
-            <LineSeparator />
+          <h1>{`R${price}`}</h1>
+
+          <Spacer />
+
+          <div className={styles.buttonContainer}>
+            <Button text="Place Order" primary handleClick={this.toggleShowOrderFormModal} />
           </div>
-
-          <h4>Price</h4>
-
-          <h2>{`R${price}`}</h2>
-
-          <p>*Excluding delivery</p>
 
           <div className={styles.lineSeparatorContainer}>
             <LineSeparator />
           </div>
 
           <h4>Description</h4>
+
+          <Spacer />
 
           <p>{description}</p>
 
@@ -88,6 +97,8 @@ export default class Product extends React.Component {
           </div>
 
           <h4>Specifications</h4>
+
+          <Spacer />
 
           <ul>
             {specifications.map((spec) => {
@@ -103,14 +114,7 @@ export default class Product extends React.Component {
             <LineSeparator />
           </div>
 
-          <div className={styles.footerContainer}>
-            <Button text="Place Order" primary handleClick={this.toggleShowOrderFormModal} />
-
-            <Button
-              text="Get in Touch"
-              href={`mailto:${app.primaryEmailAddress}?subject=${name}`}
-            />
-
+          <div className={styles.buttonContainer}>
             <Button
               text="Drivers"
               href="http://www.minihere.com/ar9271-150mbps-wireless-n-usb-wifi-adapter-pw-dn421-driver-download-for-windows-7810.html"
