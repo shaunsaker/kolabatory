@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 import { products } from '../../../config';
 import styles from './styles.scss';
 
-import LineSeparator from '../../LineSeparator';
 import Spacer from '../../Spacer';
+import LineSeparator from '../../LineSeparator';
+import ImageSlider from '../../ImageSlider';
 import Button from '../../Button';
 import OrderFormModal from './OrderFormModal';
 
@@ -54,15 +55,15 @@ export default class Product extends React.Component {
 
       return (
         <div className={styles.container}>
-          <Spacer />
-
           <h1>{name}</h1>
 
           <div className={styles.lineSeparatorContainer}>
             <LineSeparator />
           </div>
 
-          <ul className={styles.imagesContainer}>
+          <ImageSlider images={images} />
+
+          {/* <ul className={styles.imagesContainer}>
             {images.map((image) => {
               return (
                 <li key={image.src} className={styles.imageContainer}>
@@ -70,7 +71,7 @@ export default class Product extends React.Component {
                 </li>
               );
             })}
-          </ul>
+          </ul> */}
 
           <Spacer />
 

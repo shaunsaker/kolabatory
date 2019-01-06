@@ -1,0 +1,65 @@
+@import '../../static/styles/variables.scss';
+//
+.container {
+  align-self: center;
+}
+
+.topContainer {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+.slidesContainer {
+  flex: 1;
+  flex-direction: row;
+  margin: 0 16px;
+  max-width: 270px;
+  transition: transform 0.5s ease;
+}
+
+.slideContainer {
+}
+
+.image {
+  max-width: 270px;
+}
+
+.iconContainer {
+  background-color: $secondary;
+  padding: 4px;
+  border-radius: 50%;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.disabledIconContainer {
+  opacity: 0.33;
+}
+
+.icon {
+  font-size: 24px;
+  color: $primary;
+}
+
+.bulletsContainer {
+  flex-direction: row;
+  align-self: center;
+}
+
+.bulletContainer {
+  margin: 0 8px;
+}
+
+.bullet {
+  width: 16px;
+  height: 16px;
+  background-color: $secondary;
+  border-radius: 8px;
+}
+
+.activeBullet {
+  background-color: $accent;
+}
