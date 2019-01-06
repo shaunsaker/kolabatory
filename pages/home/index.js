@@ -1,30 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 
-import { app } from '../../config';
 import styles from './styles.scss';
 
 import Page from '../../components/Page';
+import Header from '../../components/Header';
 import Logo from '../../components/Logo';
 import LineSeparator from '../../components/LineSeparator';
-import Button from '../../components/Button';
 
 const Home = () => {
   return (
     <Page black>
-      <Logo />
+      <Header />
 
-      <h3 className={styles.whiteText}>
-        Mobile, Web and Native App Development •{' '}
-        <Link href="/shop">
-          <span className={styles.link}>Shop</span>
-        </Link>
-      </h3>
+      <Logo />
 
       <LineSeparator />
 
-      <Button text="Get in touch" href={`mailto:${app.primaryEmailAddress}`} />
+      <h3 className={styles.whiteText}>Mobile, Web and Native App Development</h3>
     </Page>
   );
 };
