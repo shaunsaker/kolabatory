@@ -1,15 +1,21 @@
 @import '../../static/styles/variables.scss';
 //
 .container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  align-items: center;
-  padding: 0 24px;
-  height: 72px;
-  background-color: $primary;
-  min-height: auto;
-  border-bottom: 1px solid $secondary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    height: 72px;
+    background-color: $primary;
+    min-height: auto;
+    transition: box-shadow 0.5s ease;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.67);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.67);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.67);
 }
