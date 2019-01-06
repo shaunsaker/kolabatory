@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.scss';
 
+import Button from '../../../Button';
+
 const ProductCard = ({ product }) => {
   const { id, name, price } = product;
   const imageSrc = `/static/images/${id}/${id}-1.jpg`;
@@ -13,10 +15,14 @@ const ProductCard = ({ product }) => {
         <img src={imageSrc} alt={name} className={styles.image} />
       </div>
 
-      <div className={styles.textContainer}>
-        <h3 className={styles.nameText}>{name}</h3>
+      <div className={styles.rightContainer}>
+        <div className={styles.textContainer}>
+          <h3 className={styles.nameText}>{name}</h3>
 
-        <h3 className={styles.priceText}>{`R${price}`}</h3>
+          <h3 className={styles.priceText}>{`R${price}`}</h3>
+        </div>
+
+        <Button text="More Info" primary small />
       </div>
     </div>
   );

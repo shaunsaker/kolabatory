@@ -24,10 +24,15 @@
   border-radius: 8px;
 }
 
-.textContainer {
+.rightContainer {
   flex: 1;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.textContainer {
+  align-items: flex-end;
+  min-height: auto;
 }
 
 .nameText {

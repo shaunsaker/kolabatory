@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from '../../static/styles/buttons.scss';
 
-const Button = ({ text, primary, handleClick, href, newTab }) => {
+const Button = ({ text, primary, small, handleClick, href, newTab }) => {
   if (href) {
     return (
       <a
@@ -21,7 +21,7 @@ const Button = ({ text, primary, handleClick, href, newTab }) => {
     <button
       type="button"
       onClick={handleClick}
-      className={`${styles.container} ${primary && styles.primary}`}
+      className={`${styles.container} ${primary && styles.primary} ${small && styles.small}`}
     >
       {text}
     </button>
@@ -31,6 +31,7 @@ const Button = ({ text, primary, handleClick, href, newTab }) => {
 Button.propTypes = {
   text: PropTypes.string,
   primary: PropTypes.bool,
+  small: PropTypes.bool,
   handleClick: PropTypes.func,
   href: PropTypes.string,
   newTab: PropTypes.bool,
