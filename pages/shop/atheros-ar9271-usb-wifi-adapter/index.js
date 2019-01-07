@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Head from 'next/head';
 
+import { products } from '../../../config';
 import styles from './styles.scss';
 
 import Page from '../../../components/Page';
@@ -10,11 +12,19 @@ import LineSeparator from '../../../components/LineSeparator';
 import Button from '../../../components/Button';
 
 const Atheros = () => {
+  const productID = 'atheros-ar9271-usb-wifi-adapter';
+  const product = products[productID];
+  const { name } = product;
+
   return (
     <Page dramatic>
+      <Head>
+        <title key="title">Kolabatory | {name}</title>
+      </Head>
+
       <Header transparent />
 
-      <Product productID="atheros-ar9271-usb-wifi-adapter">
+      <Product productID={productID}>
         <div className={styles.contentContainer}>
           <div className={styles.lineSeparatorContainer}>
             <LineSeparator />

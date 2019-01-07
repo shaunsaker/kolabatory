@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
+import Head from 'next/head';
 
 import { products } from '../../config';
 import styles from './styles.scss';
@@ -13,6 +14,10 @@ import ProductCard from '../../components/ProductCard';
 const Shop = () => {
   return (
     <Page dramatic>
+      <Head>
+        <title key="title">Kolabatory | Shop</title>
+      </Head>
+
       <Header transparent />
 
       <div className={styles.container}>
