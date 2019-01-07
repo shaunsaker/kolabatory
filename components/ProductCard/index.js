@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.scss';
 
-import Button from '../../../Button';
+import Button from '../Button';
 
 const ProductCard = ({ product }) => {
   const { id, name, price } = product;

@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { app, products } from '../../../config';
+import { app, products } from '../../config';
 import styles from './styles.scss';
 
-import Spacer from '../../Spacer';
-import LineSeparator from '../../LineSeparator';
-import ImageSlider from '../../ImageSlider';
-import Button from '../../Button';
+import Spacer from '../../components/Spacer';
+import LineSeparator from '../../components/LineSeparator';
+import ImageSlider from '../../components/ImageSlider';
+import Button from '../../components/Button';
 
-const Product = ({ productID }) => {
+const Product = ({ productID, children }) => {
   const product = products[productID];
 
   if (product) {
@@ -76,17 +76,7 @@ const Product = ({ productID }) => {
           })}
         </ul>
 
-        <div className={styles.lineSeparatorContainer}>
-          <LineSeparator />
-        </div>
-
-        <div className={styles.buttonContainer}>
-          <Button
-            text="Drivers"
-            href="http://www.minihere.com/ar9271-150mbps-wireless-n-usb-wifi-adapter-pw-dn421-driver-download-for-windows-7810.html"
-            newTab
-          />
-        </div>
+        {children}
       </div>
     );
   }
@@ -98,7 +88,10 @@ const Product = ({ productID }) => {
   );
 };
 
-Product.propTypes = { productID: PropTypes.string };
+Product.propTypes = {
+  productID: PropTypes.string,
+  children: PropTypes.node,
+};
 Product.defaultProps = {};
 
 export default Product;

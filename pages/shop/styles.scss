@@ -1,0 +1,14 @@
+.container {
+    flex: 1;
+    align-self: stretch;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productCardContainer {
+    cursor: pointer;
+}

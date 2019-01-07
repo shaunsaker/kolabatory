@@ -1,30 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
+import Link from 'next/link';
 
+import { products } from '../../config';
 import styles from './styles.scss';
 
 import Page from '../../components/Page';
 import Header from '../../components/Header';
-import Product from '../../components/Shop/Product';
-import Products from '../../components/Shop/Products';
+import ProductCard from '../../components/ProductCard';
 
-const Shop = ({ router }) => {
-  const { query } = router;
-  const { productID } = query;
-  let productComponent;
-
-  if (productID) {
-    productComponent = <Product productID={productID} />;
-  } else {
-    productComponent = <Products />;
-  }
-
+const Shop = () => {
   return (
     <Page dramatic>
       <Header transparent />
 
-      {productComponent}
+      <div className={styles.container}>
+        <ul className={styles.productsContainer}>
+          {Object.keys(products).map((productID) => {
+            const product = products[productID];
+
+            return (
+              <Link key={productID} href={`/shop/${productID}`}>
+                <li className={styles.productCardContainer}>
+                  <ProductCard product={product} />
+                </li>
+              </Link>
+            );
+          })}
+        </ul>
+      </div>
     </Page>
   );
 };
