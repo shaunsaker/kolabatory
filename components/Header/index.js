@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import { withRouter } from 'next/router';
 
 import { app } from '../../config';
 import styles from './styles.scss';
 
 import Logo from '../Logo';
 
-export default class Header extends React.Component {
+export class Header extends React.Component {
   constructor(props) {
     super(props);
 
@@ -21,6 +22,9 @@ export default class Header extends React.Component {
 
   static propTypes = {
     transparent: PropTypes.bool,
+    router: PropTypes.shape({
+      pathname: PropTypes.string,
+    }),
   };
 
   static defaultProps = {};
@@ -51,7 +55,8 @@ export default class Header extends React.Component {
 
   render() {
     const { hasShadow } = this.state;
-    const { transparent } = this.props;
+    const { transparent, router } = this.props;
+    const { pathname } = router;
 
     return (
       <div
@@ -62,7 +67,12 @@ export default class Header extends React.Component {
 
         <div className={styles.linksContainer}>
           <Link href="/shop">
-            <p className={`${styles.whiteText} ${styles.shopLinkText}`}>Shop</p>
+            <p
+              className={`${styles.whiteText} ${styles.shopLinkText} ${pathname === '/shop' &&
+                styles.activeText}`}
+            >
+              Shop
+            </p>
           </Link>
 
           <a
@@ -76,3 +86,5 @@ export default class Header extends React.Component {
     );
   }
 }
+
+export default withRouter(Header);
