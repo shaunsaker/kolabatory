@@ -21,7 +21,7 @@ const Shop = () => {
             const product = products[productID];
 
             return (
-              <Link key={productID} href={`/shop/${productID}`}>
+              <Link key={productID} href={`/shop/${productID}`} prefetch>
                 <li className={styles.productCardContainer}>
                   <ProductCard product={product} />
                 </li>

@@ -67,7 +67,7 @@ export class Header extends React.Component {
         <Logo small />
 
         <div className={styles.linksContainer}>
-          <Link href="/shop">
+          <Link href="/shop" prefetch>
             <p
               className={`${styles.whiteText} ${styles.shopLinkText} ${
                 pathname.indexOf('shop') > -1 ? styles.activeText : null
