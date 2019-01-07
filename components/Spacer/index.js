@@ -6,7 +6,11 @@ import styles from './styles.scss';
 const Spacer = ({ small, large }) => {
   // Adds vertical spacing
   return (
-    <div className={`${styles.container} ${small && styles.small} ${large && styles.large} `} />
+    <div
+      className={`${styles.container} ${small ? styles.small : null} ${
+        large ? styles.large : null
+      } `}
+    />
   );
 };
 

@@ -10,7 +10,7 @@ const Button = ({ text, primary, small, handleClick, href, newTab }) => {
         href={href}
         target={newTab ? '_blank' : null}
         rel={newTab ? 'noopener noreferrer' : null}
-        className={`${styles.container} ${primary && styles.primary}`}
+        className={`${styles.container} ${primary ? styles.primary : null}`}
       >
         {text}
       </a>
@@ -21,7 +21,9 @@ const Button = ({ text, primary, small, handleClick, href, newTab }) => {
     <button
       type="button"
       onClick={handleClick}
-      className={`${styles.container} ${primary && styles.primary} ${small && styles.small}`}
+      className={`${styles.container} ${primary ? styles.primary : null} ${
+        small ? styles.small : null
+      }`}
     >
       {text}
     </button>

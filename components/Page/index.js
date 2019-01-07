@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 import styles from './styles.scss';
 
 const Page = ({ dramatic, children }) => {
-  return <div className={`${styles.container} ${dramatic && styles.dramatic}`}>{children}</div>;
+  return (
+    <div className={`${styles.container} ${dramatic ? styles.dramatic : null}`}>{children}</div>
+  );
 };
 
 Page.propTypes = {

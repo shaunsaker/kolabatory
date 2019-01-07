@@ -10,7 +10,7 @@ const Logo = ({ small, secondary }) => {
       <img
         src={`/static/images/logo-${secondary ? 'secondary' : 'primary'}.svg`}
         alt="Kolabatory logo"
-        className={`${styles.image} ${small && styles.small}`}
+        className={`${styles.image} ${small ? styles.small : null}`}
       />
     </Link>
   );

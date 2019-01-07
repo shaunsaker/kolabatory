@@ -41,9 +41,9 @@ export default class ImageSlider extends React.Component {
         <div className={styles.topContainer}>
           <button
             type="button"
-            className={`${styles.iconContainer} ${
-              styles.leftArrowIconContainer
-            } ${isLeftArrowIconContainerDisabled && styles.disabledIconContainer}`}
+            className={`${styles.iconContainer} ${styles.leftArrowIconContainer} ${
+              isLeftArrowIconContainerDisabled ? styles.disabledIconContainer : null
+            }`}
             onClick={() => this.setImageIndex(imageIndex - 1)}
             disabled={isLeftArrowIconContainerDisabled}
           >
@@ -70,9 +70,9 @@ export default class ImageSlider extends React.Component {
 
           <button
             type="button"
-            className={`${styles.iconContainer} ${
-              styles.rightArrowIconContainer
-            } ${isRightArrowIconContainerDisabled && styles.disabledIconContainer}`}
+            className={`${styles.iconContainer} ${styles.rightArrowIconContainer} ${
+              isRightArrowIconContainerDisabled ? styles.disabledIconContainer : null
+            }`}
             onClick={() => this.setImageIndex(imageIndex + 1)}
             disabled={isRightArrowIconContainerDisabled}
           >
@@ -88,7 +88,9 @@ export default class ImageSlider extends React.Component {
               <div key={image.src} className={styles.bulletContainer}>
                 <button
                   type="button"
-                  className={`${styles.bullet} ${imageIndex === index && styles.activeBullet}`}
+                  className={`${styles.bullet} ${
+                    imageIndex === index ? styles.activeBullet : null
+                  }`}
                   onClick={() => this.setImageIndex(index)}
                 />
               </div>
