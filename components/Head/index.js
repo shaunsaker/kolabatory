@@ -19,6 +19,8 @@ const HeadComponent = () => {
         key="viewport"
       />
 
+      <meta name="theme-color" content="#FFCA00" key="theme-color" />
+
       <link rel="icon" type="image/x-icon" href="../../static/favicon.ico" />
 
       {/* Global site tag (gtag.js) - Google Analytics */}
