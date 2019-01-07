@@ -11,8 +11,8 @@ import Button from '../../../components/Button';
 
 const Atheros = () => {
   return (
-    <Page>
-      <Header />
+    <Page dramatic>
+      <Header transparent />
 
       <Product productID="atheros-ar9271-usb-wifi-adapter">
         <div className={styles.contentContainer}>
