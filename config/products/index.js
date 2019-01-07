@@ -12,7 +12,6 @@ const products = {
       'Supported on Windows 7/8/10 32/64-bit, Linux, Kali Linux',
       'USB 2.0 interface',
       '3 dBi 2.4G Hz antenna',
-      '',
     ],
   },
 };

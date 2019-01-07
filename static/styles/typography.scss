@@ -6,61 +6,58 @@ h3,
 h4,
 h5,
 p {
-  margin: 0;
-  color: $primary;
+    margin: 0;
+    color: $primary;
 }
 
 a {
-  color: $primary;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.5;
+    color: $primary;
 }
 
 h1 {
-  font-size: 1.8em;
+    font-size: 1.8em;
+    line-height: 1.25;
 }
 
 h2 {
-  font-size: 1.375em;
+    font-size: 1.375em;
+    line-height: 1.5;
 }
 
 h3 {
-  font-size: 1.25em;
-  font-weight: 200;
+    font-size: 1.25em;
+    font-weight: 200;
+    line-height: 1.5;
 }
 
 h4 {
-  font-size: 0.875em;
-  text-transform: uppercase;
-  font-weight: 700;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 h5 {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 h5 {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 h6 {
-  font-size: 0.875em;
+    font-size: 0.875em;
 }
 
 p,
 a,
 input,
 label {
-  font-size: 1em;
-  font-weight: 200;
+    font-size: 1em;
+    font-weight: 200;
 }
 
 input,
 select {
-  font-family: 'Roboto Condensed';
-  font-weight: 700;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
 }

@@ -34,7 +34,7 @@ export default class ImageSlider extends React.Component {
     const { images } = this.props;
     const isLeftArrowIconContainerDisabled = imageIndex === 0;
     const isRightArrowIconContainerDisabled = imageIndex === images.length - 1;
-    const slideWidth = 220;
+    const slideWidth = 200;
 
     return (
       <div className={styles.container}>
