@@ -34,6 +34,7 @@ export default class ImageSlider extends React.Component {
     const { images } = this.props;
     const isLeftArrowIconContainerDisabled = imageIndex === 0;
     const isRightArrowIconContainerDisabled = imageIndex === images.length - 1;
+    const slideWidth = 220;
 
     return (
       <div className={styles.container}>
@@ -50,13 +51,18 @@ export default class ImageSlider extends React.Component {
           </button>
 
           <div
-            style={{ transform: `translateX(-${270 * imageIndex}px)` }}
+            style={{ width: slideWidth, transform: `translateX(-${slideWidth * imageIndex}px)` }}
             className={styles.slidesContainer}
           >
             {images.map((image) => {
               return (
                 <div key={image.src} className={styles.slideContainer}>
-                  <img src={image.src} alt={image.alt} className={styles.image} />
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className={styles.image}
+                    style={{ width: slideWidth }}
+                  />
                 </div>
               );
             })}
