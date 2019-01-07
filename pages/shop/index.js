@@ -21,8 +21,8 @@ const Shop = ({ router }) => {
   }
 
   return (
-    <Page>
-      <Header />
+    <Page dramatic>
+      <Header transparent />
 
       {productComponent}
     </Page>

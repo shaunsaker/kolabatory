@@ -1,44 +1,42 @@
 .container {
-  flex-direction: row;
-  background-color: #ffffff;
-  width: 100%;
-  max-width: 400px;
-  height: 200px;
-  border-radius: 8px;
-  padding: 16px 24px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transition: box-shadow 0.5s ease;
-  &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    padding: 16px 24px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: box-shadow 0.5s ease;
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
 }
 
 .imageContainer {
-  flex: 1;
-  justify-content: center;
-  margin-right: 16px;
+    flex: 1;
+    justify-content: center;
+    margin-right: 16px;
 }
 
 .image {
-  width: 100%;
-  border-radius: 8px;
+    width: 100%;
 }
 
 .rightContainer {
-  flex: 1;
-  justify-content: space-between;
-  align-items: flex-end;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .textContainer {
-  align-items: flex-end;
-  min-height: auto;
+    align-items: flex-end;
+    min-height: auto;
 }
 
 .nameText {
-  text-align: right;
+    text-align: right;
 }
 
 .priceText {
-  font-weight: 700;
+    font-weight: 700;
 }
