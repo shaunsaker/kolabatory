@@ -19,6 +19,14 @@ const SEO = {
     handle: '@kolabatory',
     cardType: 'summary_large_image',
   },
+  richText: {
+    openingHours: 'Mo,Tu,We,Th,Fr 08:00-17:00',
+    streetAddress: '34 Tuscan Waters, Gie Road',
+    addressLocality: 'Cape Town',
+    postalCode: '7441',
+    addressCountry: 'South Africa',
+    priceRange: 'RRR',
+  },
 };
 
 export default SEO;

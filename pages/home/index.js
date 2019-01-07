@@ -17,7 +17,7 @@ const Home = () => {
         title="Innovation. Collaboration. Efficiency."
         description="These are the 3 pillars of Kolabatory. Have a new idea? Let's build it together. We'll help you develop a quality web, mobile or native app, blazingly fast and at a reasonable rate."
         buttonText="Get in touch"
-        buttonHREF={`mailto:${app.primaryEmailAddress}`}
+        buttonHREF={`mailto:${app.emailAddress}`}
       />
     </Page>
   );

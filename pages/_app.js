@@ -1,7 +1,6 @@
 import React from 'react';
 import App, { Container } from 'next/app';
 
-// Global styles
 import '../static/styles/global.scss';
 
 import Head from '../components/Head';

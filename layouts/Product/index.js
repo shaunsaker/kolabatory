@@ -43,7 +43,7 @@ const Product = ({ productID, children }) => {
             text="Place Order"
             primary
             href={`mailto:${
-              app.primaryEmailAddress
+              app.emailAddress
             }?subject=Order: ${name}&body=Hello,%0D%0A%0D%0AI would like to place an order for the ${name}. %0D%0A%0D%0APlease get back to me with instructions.%0D%0A%0D%0AKind regards.`}
           />
         </div>

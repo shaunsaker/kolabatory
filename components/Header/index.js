@@ -78,7 +78,7 @@ export class Header extends React.Component {
           </Link>
 
           <a
-            href={`mailto:${app.primaryEmailAddress}`}
+            href={`mailto:${app.emailAddress}`}
             className={`${styles.whiteText} ${styles.contactLinkText}`}
           >
             Contact
