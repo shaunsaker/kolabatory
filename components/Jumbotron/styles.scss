@@ -1,0 +1,15 @@
+@import '../../static/styles/variables.scss';
+.container {
+  align-self: center;
+  align-items: center;
+  max-width: 720px;
+}
+
+.titleText {
+  font-size: 3.6em;
+  color: $secondary;
+}
+
+.descriptionText {
+  color: $secondary;
+}

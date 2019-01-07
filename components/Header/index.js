@@ -19,7 +19,9 @@ export default class Header extends React.Component {
     };
   }
 
-  static propTypes = {};
+  static propTypes = {
+    transparent: PropTypes.bool,
+  };
 
   static defaultProps = {};
 
@@ -49,9 +51,13 @@ export default class Header extends React.Component {
 
   render() {
     const { hasShadow } = this.state;
+    const { transparent } = this.props;
 
     return (
-      <div className={`${styles.container} ${hasShadow && styles.shadow}`}>
+      <div
+        className={`${styles.container} ${hasShadow && styles.shadow} ${transparent &&
+          styles.transparent}`}
+      >
         <Logo small />
 
         <div className={styles.linksContainer}>

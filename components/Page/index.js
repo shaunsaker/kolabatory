@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.scss';
 
-const Page = ({ black, children }) => {
-  return <div className={`${styles.container} ${black && styles.black}`}>{children}</div>;
+const Page = ({ dramatic, children }) => {
+  return <div className={`${styles.container} ${dramatic && styles.dramatic}`}>{children}</div>;
 };
 
 Page.propTypes = {
-  black: PropTypes.bool,
+  dramatic: PropTypes.bool,
   children: PropTypes.node,
 };
 Page.defaultProps = {};

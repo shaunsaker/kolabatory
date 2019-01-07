@@ -1,41 +1,45 @@
 @import '../../static/styles/variables.scss';
 //
 .container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-  height: 72px;
-  background-color: $primary;
-  min-height: auto;
-  transition: box-shadow 0.5s ease;
-  z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 72px;
+    background-color: $primary;
+    min-height: auto;
+    transition: box-shadow 0.5s ease;
+    z-index: 2;
 }
 
 .shadow {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.transparent {
+    background-color: transparent;
 }
 
 .linksContainer {
-  flex-direction: row;
-  align-items: center;
-  margin-left: 16px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 16px;
 }
 
 .shopLinkText {
-  margin-right: 16px;
-  font-weight: 700;
-  cursor: pointer;
+    margin-right: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .contactLinkText {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .whiteText {
-  color: $secondary;
+    color: $secondary;
 }
