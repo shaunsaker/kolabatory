@@ -1,5 +1,5 @@
 const title = 'Kolabatory';
-const description = 'Web, Mobile and Native App Development';
+const description = 'Web, Mobile and Native App Development in Cape Town, South Africa';
 
 const SEO = {
   title,

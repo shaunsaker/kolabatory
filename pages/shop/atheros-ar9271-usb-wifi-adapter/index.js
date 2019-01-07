@@ -20,6 +20,10 @@ const Atheros = () => {
     <Page dramatic>
       <Head>
         <title key="title">Kolabatory | {name}</title>
+
+        <description key="description">
+          Buy an Atheros AR9271 USB WiFi adapter in South Africa
+        </description>
       </Head>
 
       <Header transparent />
